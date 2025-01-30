@@ -9,9 +9,13 @@ public class Main {
         Porsche.swingSword();
         Porsche.swingSword();
         Porsche.swingSword();
-        Porsche.takeDamage(30);
+        Porsche.takeDamage(-50);
+        Porsche.takeDamage(0);
         Porsche.takeDamage(50);
+        Porsche.takeDamage(30);
         Porsche.takeDamage(20);
+        Porsche.takeDamage(20);
+        Porsche.takeDamage(-90);
         Porsche.takeDamage(20);
         Porsche.rest();
     }

@@ -21,9 +21,11 @@ public class Character {
     }
 
     protected void takeDamage(int damage){
-        if(health > 0){
+        if(health > 0 && damage > 0){
             this.health = this.health - damage;
             System.out.println("Character takes "+ damage + " damage. Health is now " + this.health + ".");
+        }else if (damage <= 0){
+            System.out.println("Sorry wrong damage input.");
         }else{
             System.out.println("Character is dead.");
             this.health = 0;
@@ -34,6 +36,6 @@ public class Character {
         this.health=this.maxHealth;
         this.stamina=this.maxStamina;
         System.out.println("Character has rested. Health and stamina restored to maximum.");
-        System.out.println("Character created with "+ this.health +" health and "+ this.stamina +" stamina.");
+        System.out.println("Character's health: "+ this.health +", Stamina: "+ this.stamina +".");
     }
 }
